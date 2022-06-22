@@ -1,4 +1,5 @@
 
+import csv
 import readline
 
 
@@ -25,4 +26,13 @@ for nums in roll:
 quali.sort()
 
 # list quali contains all the roll numbers of the qualified candidates
+# %%
+# opening the csv file in 'w+' mode
+file = open('qualified.csv', 'w+')
+
+# writing the data into the file
+with file:
+    write = csv.writer(file)
+    write.writerow(quali)
+
 # %%
