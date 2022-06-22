@@ -12,5 +12,17 @@ with open(fname, 'r') as fileref:
         b = line.strip()
         roll.append(b)
 # %%
+quali = []
+for nums in roll:
+    if len(nums) < 1:
+        continue
+    else:
+        num = nums.split()
 
-for lums in roll:
+        for n in num:
+            quali.append(n)
+
+quali.sort()
+
+# list quali contains all the roll numbers of the qualified candidates
+# %%
