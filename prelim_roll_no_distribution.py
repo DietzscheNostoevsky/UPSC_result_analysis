@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # 2022 prelims result analysis
 
 import csv
